@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.back.Entity;
 
 import javax.persistence.Entity;
@@ -17,13 +12,17 @@ public class Educacion {
     private int id;
     private String nombreE;
     private String descripcionE;
+    private String fechainicio;
+    private String fechafin;    
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String descripcionE, String fechainicio, String fechafin) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.fechainicio = fechainicio;
+        this.fechafin = fechafin;
     }
 
     public int getId() {
@@ -48,6 +47,22 @@ public class Educacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getFechainicio() {
+        return fechainicio;
+    }
+
+    public void setFechainicio(String fechainicio) {
+        this.fechainicio = fechainicio;
+    }
+
+    public String getFechafin() {
+        return fechafin;
+    }
+
+    public void setFechafin(String fechafin) {
+        this.fechafin = fechafin;
     }
     
     

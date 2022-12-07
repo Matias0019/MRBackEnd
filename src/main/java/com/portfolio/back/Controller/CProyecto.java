@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/proyectos")
-@CrossOrigin(origins = {"direcciondeployfinal","http://localhost:4200"})
+@CrossOrigin(origins = {"https://matias-romero-frontend.web.app","http://localhost:4200"})
 public class CProyecto {
     @Autowired
     SProyecto sProyecto;
@@ -61,7 +61,7 @@ public class CProyecto {
         }
         
         Proyecto proyecto = new Proyecto(
-                dtoproyecto.getNombre(), dtoproyecto.getLinkProyecto(), dtoproyecto.getDescripcion(), dtoproyecto.getImg()
+                dtoproyecto.getNombre(), dtoproyecto.getLinkproyecto(), dtoproyecto.getDescripcion(), dtoproyecto.getImg()
             );
         sProyecto.save(proyecto);
         return new ResponseEntity(new Mensaje("Proyecto creado"), HttpStatus.OK);
@@ -83,7 +83,7 @@ public class CProyecto {
         Proyecto proyecto = sProyecto.getOne(id).get();
         
         proyecto.setNombre(dtoproyecto.getNombre());
-        proyecto.setLinkProyecto(dtoproyecto.getLinkProyecto());
+        proyecto.setLinkproyecto(dtoproyecto.getLinkproyecto());
         proyecto.setDescripcion(dtoproyecto.getDescripcion());
         proyecto.setImg(dtoproyecto.getImg());
         

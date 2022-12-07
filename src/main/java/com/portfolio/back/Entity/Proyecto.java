@@ -18,7 +18,7 @@ public class Proyecto {
     private String nombre;
     
     @NotNull
-    private String linkProyecto;
+    private String linkproyecto;
     
     @NotNull
     private String descripcion;
@@ -28,9 +28,9 @@ public class Proyecto {
     public Proyecto() {
     }
 
-    public Proyecto(String nombre, String linkProyecto, String descripcion, String img) {
+    public Proyecto(String nombre, String linkproyecto, String descripcion, String img) {
         this.nombre = nombre;
-        this.linkProyecto = linkProyecto;
+        this.linkproyecto = linkproyecto;
         this.descripcion = descripcion;
         this.img = img;
     }
@@ -51,12 +51,12 @@ public class Proyecto {
         this.nombre = nombre;
     }
 
-    public String getLinkProyecto() {
-        return linkProyecto;
+    public String getLinkproyecto() {
+        return linkproyecto;
     }
 
-    public void setLinkProyecto(String linkProyecto) {
-        this.linkProyecto = linkProyecto;
+    public void setLinkproyecto(String linkproyecto) {
+        this.linkproyecto = linkproyecto;
     }
 
     public String getDescripcion() {
@@ -75,7 +75,5 @@ public class Proyecto {
         this.img = img;
     }
 
-    
-    
     
 }

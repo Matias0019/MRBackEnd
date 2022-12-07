@@ -7,7 +7,7 @@ public class dtoProyecto {
     @NotBlank
     private String nombre;   
     @NotBlank
-    private String linkProyecto; 
+    private String linkproyecto; 
     @NotBlank
     private String descripcion;
     @NotBlank
@@ -16,9 +16,9 @@ public class dtoProyecto {
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String nombre, String linkProyecto, String descripcion, String img) {
+    public dtoProyecto(String nombre, String linkproyecto, String descripcion, String img) {
         this.nombre = nombre;
-        this.linkProyecto = linkProyecto;
+        this.linkproyecto = linkproyecto;
         this.descripcion = descripcion;
         this.img = img;
     }
@@ -31,12 +31,12 @@ public class dtoProyecto {
         this.nombre = nombre;
     }
 
-    public String getLinkProyecto() {
-        return linkProyecto;
+    public String getLinkproyecto() {
+        return linkproyecto;
     }
 
-    public void setLinkProyecto(String linkProyecto) {
-        this.linkProyecto = linkProyecto;
+    public void setLinkproyecto(String linkproyecto) {
+        this.linkproyecto = linkproyecto;
     }
 
     public String getDescripcion() {
@@ -55,7 +55,5 @@ public class dtoProyecto {
         this.img = img;
     }
 
-    
-    
     
 }

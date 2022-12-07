@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolio.back.Dto;
 
 import javax.validation.constraints.NotBlank;
@@ -12,13 +7,19 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
+    private String fechainicio;
+    @NotBlank
+    private String fechafin;
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String descripcionE, String fechainicio, String fechafin) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.fechainicio = fechainicio;
+        this.fechafin = fechafin;
     }
 
     public String getNombreE() {
@@ -35,6 +36,22 @@ public class dtoEducacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getFechainicio() {
+        return fechainicio;
+    }
+
+    public void setFechainicio(String fechainicio) {
+        this.fechainicio = fechainicio;
+    }
+
+    public String getFechafin() {
+        return fechafin;
+    }
+
+    public void setFechafin(String fechafin) {
+        this.fechafin = fechafin;
     }
     
     
